@@ -15,6 +15,7 @@ import weather from './assets/weather.jpeg';
 import todo from './assets/todo.png';
 import './App.css';
 
+
 function App() {
   const [selectedTab, setSelectedTab] = useState('skill');
 
@@ -56,14 +57,14 @@ function App() {
       </div>
 
       <div id="home" className="front">
-        <div className="hello" style={{alignContent:'center'}}>
+        <div className="hello" style={{alignContent:'center', marginTop:'-20px'}}>
           <h1 style={{marginLeft:'20px'}}>Hi! I am Krishna Upadhyay</h1>
           <h2>|| Full-stack Developer || Software Engineer ||</h2>
         </div>
         <div className="Profilephoto">
           <img style={{ height: '200px', borderRadius:'200px'  }} src={logo} alt="LOGO" />
         </div>
-        <div>
+        <div style={{marginBottom:'20px'}}>
           <h1>
             A developer with an innovative mindset and enthusiasm for coding and developing new
             things.
@@ -72,7 +73,7 @@ function App() {
       </div>
 
       <div id="about" className="about">
-        <h1>About Me</h1>
+        <h1 style={{marginTop:'100px'}}>About Me</h1>
         <p>
           I am a Full Stack Web Developer with a passion for creating interactive and responsive web
           applications that deliver seamless user experiences. My expertise spans across a dynamic
@@ -81,7 +82,7 @@ function App() {
 
         {/* Tab Section */}
         <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '20px' }}>
-          <button
+          <h2
             onClick={() => setSelectedTab('skill')}
             style={{
               backgroundColor: selectedTab === 'skill' ? 'grey' : 'black',
@@ -93,8 +94,8 @@ function App() {
             }}
           >
             Skills
-          </button>
-          <button
+          </h2>
+          <h2
             onClick={() => setSelectedTab('education')}
             style={{
               backgroundColor: selectedTab === 'education' ? 'grey' : 'black',
@@ -106,7 +107,7 @@ function App() {
             }}
           >
             Education
-          </button>
+          </h2>
         </div>
 
         {/* Conditional Content Rendering */}
@@ -158,7 +159,7 @@ function App() {
       </div>
 
       <div id="projects" style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around' }}>
-        <h1>Projects</h1>
+        <h1 style={{marginTop:'50px'}}>Projects</h1>
         <div style={{ display: 'grid', gridTemplateColumns: '200px 200px 200px', gap: '100px' }}>
         <a
         href="https://github.com/kupadhyay2394/UrlShortner"
@@ -166,8 +167,8 @@ function App() {
         rel="noopener noreferrer"
         style={{ color: 'white', textDecoration: 'none' }}
       >
-          <div style={{ backgroundColor: '#002', width: '250px' }}>
-            <img style={{ width: '250px', height: '250px' }} src={urlshortner} alt="Url Shortner" />
+          <div style={{ backgroundColor: 'grey', width: '250px' , borderRadius:'25px',alignContent:'center'}}>
+            <img style={{ width: '250px', height: '250px',borderTopLeftRadius:'25px',borderTopRightRadius:'25px' }} src={urlshortner} alt="Url Shortner" />
             <h2>Url Shortner</h2>
             <p>Url shortener API using server-side rendering</p>
           </div>
@@ -178,8 +179,8 @@ function App() {
         rel="noopener noreferrer"
         style={{ color: 'white', textDecoration: 'none' }}
       >
-          <div style={{ backgroundColor: '#002', width: '250px' }}>
-            <img style={{ width: '250px' }} src={weather} alt="Weather API" />
+          <div style={{ backgroundColor: 'grey', width: '250px',borderRadius:'25px',alignContent:'center' }}>
+            <img style={{ width: '250px',borderTopLeftRadius:'25px',borderTopRightRadius:'25px' }} src={weather} alt="Weather API" />
             <h2>Weather API</h2>
             <p>Weather API using Redis cache</p>
           </div>
@@ -190,8 +191,8 @@ function App() {
         rel="noopener noreferrer"
         style={{ color: 'white', textDecoration: 'none' }}
       >
-          <div style={{ backgroundColor: '#002', width: '250px' }}>
-            <img style={{ width: '250px' }} src={todo} alt="Todo App" />
+          <div style={{ backgroundColor: 'grey', width: '250px',borderRadius:'25px',alignContent:'center' }}>
+            <img style={{ width: '250px' ,borderTopLeftRadius:'25px',borderTopRightRadius:'25px'}} src={todo} alt="Todo App" />
             <h2>Todo App</h2>
             <p>A todo app based on CRUD operations</p>
           </div>
@@ -200,14 +201,14 @@ function App() {
       </div>
 
       <div id="contact" style={{ height: '100vh', display: 'flex', justifyContent: 'space-between' }}>
-        <div style={{ marginLeft: '50px' }}>
+        <div style={{ marginLeft: '50px',marginTop:'200px' }}>
           <h2>Let's connect</h2>
           <p>
             I am currently looking for new opportunities, my inbox is always open. Whether you have
             a question or just want to say hi, I'll try my best to get back to you!
           </p>
         </div>
-        <div style={{ marginRight: '50px' }}>
+        <div style={{ marginRight: '50px',marginTop:'200px' }}>
           <h1>Email</h1>
           <a
         href="mailto:kupadhyay2394@gmail.com"
