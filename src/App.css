@@ -1,0 +1,37 @@
+.front{
+  background-color: black;
+  height: 100vh;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+}
+.Profilephoto{
+  display: flex;
+
+}
+.dashboard{
+  position: fixed; /* Fixes the dashboard at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the dashboard span the full width */
+  background-color: black; /* Background color of the dashboard */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: space-around; /* Even spacing between items */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0; /* Padding for spacing */
+  z-index: 1000; 
+}
+
+body{
+  background-color: black;
+  color:white
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
