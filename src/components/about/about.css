@@ -1,0 +1,17 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+
+@media (max-width:426px) and (min-width:319px) {
+    .heading{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

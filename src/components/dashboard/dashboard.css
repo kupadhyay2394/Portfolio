@@ -1,0 +1,42 @@
+.nawraper {
+  padding-right: 5px;
+  
+  }
+.content {
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+}
+  
+@media (max-width:426px)  and (min-width:319px) {
+    .content{
+        font-size: x-small;
+    }
+}
+.item {
+    
+    transform: translateX(1);
+    transition: all 0.3s ease;
+   
+  }
+
+  .item:hover {
+    background-color: rgb(255, 255, 255);
+    font-size: xx-large;
+    opacity: 1; 
+    transform: translateX(0); 
+    color: black;
+  }
+@media only screen and (max-width:425px){
+    content{
+        font-size: medium
+    }; 
+    
+ }  

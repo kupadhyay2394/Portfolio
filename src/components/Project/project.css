@@ -1,0 +1,30 @@
+.project{
+    height:100%;
+    margin-top:50px;
+    text-align: center;
+    color:black;
+}
+.icon{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    color:black;
+
+}
+.icon-item{
+    background-color: white;
+    
+    width: 250px;
+    border-radius: 25px;
+}
+@media (max-width:426px) and (min-width:319px){
+    .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     
+        gap:50px;
+        align-items: center;
+
+    }
+}

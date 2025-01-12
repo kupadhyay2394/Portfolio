@@ -1,0 +1,17 @@
+.contact{
+    
+    color:aliceblue;
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+@media (max-width:426px) and (min-width:319px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+}

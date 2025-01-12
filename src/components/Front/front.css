@@ -1,0 +1,14 @@
+.home{
+    padding-top: 7%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+}
+@media (max-width:456px) and (min-width:319px){
+    .home{
+        font-size: x-small;
+    }
+}
