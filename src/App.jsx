@@ -14,7 +14,7 @@ import urlshortner from './assets/urlshortner.png';
 import weather from './assets/weather.jpeg';
 import todo from './assets/todo.png';
 import './App.css';
-import Dashboard from './components/dashboard/dashboard';
+import Dashboard from './components/dashboard/Dashboard.jsx';
 import Home from './components/Front/front';
 import About from './components/about/about';
 import Project from './components/Project/project';
